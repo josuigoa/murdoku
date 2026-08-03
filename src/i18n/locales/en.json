@@ -8,7 +8,8 @@
     "en": "English",
     "es": "Spanish",
     "pt": "Portuguese",
-    "fr": "French"
+    "fr": "French",
+    "eu": "Euskara"
   },
   "start": {
     "kicker": "A logic mystery",
@@ -317,7 +318,7 @@
       "body": "Armin is north of Bella — so Bella must be lower: the corner R2/C6. Place Bella (press and hold ~1 second)."
     },
     "w_selectA2": {
-      "title": "Place Armin",
+      "title": "Select Armin",
       "body": "Select Armin."
     },
     "w_placeA": {

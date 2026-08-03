@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "editor-24-elektroladen",
   "title": "24. Elektroladen",
-  "titles": { "de": "24. Elektroladen", "en": "24. The Electronics Store" },
+  "titles": { "de": "24. Elektroladen", "en": "24. The Electronics Store", "eu": "24. Elektronika denda" },
   "author": "Manuel Garand",
   "size": {
     "width": 8,
