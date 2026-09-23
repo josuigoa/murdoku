@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { updateSettings, useSettings, type HelpMode } from '../game/settings.ts'
-import LanguageSelect from './LanguageSelect.tsx'
+// import LanguageSelect from './LanguageSelect.tsx'
 
 const HELP_MODES: readonly HelpMode[] = ['full', 'reduced', 'none']
 const MODE_KEY: Record<HelpMode, string> = {
@@ -62,10 +62,10 @@ export default function SettingsDialog({ onClose }: { onClose: () => void }) {
         <span className="mk-dialog__stamp mk-settings__stamp">{t('settings.stamp')}</span>
         <h3>{t('settings.title')}</h3>
 
-        <div className="mk-settings__row">
+        {/* <div className="mk-settings__row">
           <span className="mk-settings__label">{t('settings.language')}</span>
           <LanguageSelect />
-        </div>
+        </div> */}
 
         <div className="mk-settings__row mk-settings__row--stack">
           <span className="mk-settings__label">{t('settings.help')}</span>

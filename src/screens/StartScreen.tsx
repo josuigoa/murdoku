@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import LanguageSelect from '../components/LanguageSelect.tsx'
+// import LanguageSelect from '../components/LanguageSelect.tsx'
 import BloodText from '../components/BloodText.tsx'
 import BloodSplatter from '../components/BloodSplatter.tsx'
 import DailyName from '../components/DailyName.tsx'
@@ -92,7 +92,7 @@ export default function StartScreen({
         <div className="mk-start__inner">
           <p className="mk-start__kicker">{t('start.kicker')}</p>
           <h1 className="mk-wordmark">
-            MURD<em>O</em>KU
+            HILD<em>O</em>KU
           </h1>
           <div className="mk-credits">
             <p className="mk-credits__line">
@@ -175,7 +175,7 @@ export default function StartScreen({
             </button>
           </div>
           <div className="mk-start__lang">
-            <LanguageSelect dropUp />
+            {/* <LanguageSelect dropUp /> */}
           </div>
           {onQuit && (
             <button type="button" className="mk-start__quit" onClick={onQuit}>
