@@ -323,7 +323,10 @@ function BoardCanvas(props: Props) {
       const p = propsRef.current
       cancelPress()
       if (press.mode === 'remove' && press.personId) p.onRemove(press.personId)
-      else if (press.mode === 'commit' && p.selectedSuspect) p.onCommit(press.cell, p.selectedSuspect)
+      else if (press.mode === 'commit' && p.selectedSuspect) {
+        p.onRemove(p.selectedSuspect)
+        p.onCommit(press.cell, p.selectedSuspect)
+      }
       redraw()
       return
     }
