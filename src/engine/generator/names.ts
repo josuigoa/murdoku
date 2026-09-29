@@ -5,33 +5,35 @@ export interface NamedPerson {
 
 // 20 male + 20 female per starting letter (variety across generated levels).
 const MALE: Record<string, string[]> = {
-  A: ['Alex', 'Amir', 'Anton', 'Adrian', 'Aaron', 'Albert', 'Andre', 'Arne', 'Aziz', 'Achim', 'Armin', 'Axel', 'Arda', 'Aleks', 'Arno', 'August', 'Anselm', 'Artur', 'Aron', 'Ahmet'],
-  B: ['Bernd', 'Boris', 'Bruno', 'Bastian', 'Bilal', 'Bernhard', 'Bjarne', 'Benno', 'Bela', 'Benedikt', 'Bodo', 'Berkay', 'Bent', 'Burak', 'Balthasar', 'Bram', 'Bo', 'Bennet', 'Ben', 'Baran'],
-  C: ['Cyrus', 'Carl', 'Curtis', 'Christian', 'Conor', 'Cedric', 'Cem', 'Claudio', 'Cornelius', 'Connor', 'Caspar', 'Can', 'Carlo', 'Colin', 'Constantin', 'Chris', 'Carsten', 'Cassius', 'Cliff', 'Cetin'],
-  D: ['Dylan', 'Dean', 'Dominik', 'David', 'Dario', 'Denis', 'Dirk', 'Damian', 'Diego', 'Daniel', 'Deniz', 'Devin', 'Dustin', 'Darius', 'Dragan', 'Dorian', 'Dmitri', 'Dennis', 'Detlef', 'Dino'],
-  E: ['Edison', 'Emil', 'Erik', 'Elias', 'Enzo', 'Eric', 'Eduard', 'Efe', 'Egon', 'Ewald', 'Emre', 'Ernst', 'Elmar', 'Eren', 'Edgar', 'Edmund', 'Elliot', 'Elia', 'Eberhard', 'Emin'],
-  F: ['Floyd', 'Finn', 'Felix', 'Frank', 'Fabian', 'Ferdinand', 'Florian', 'Faruk', 'Falk', 'Fritz', 'Frederik', 'Fynn', 'Furkan', 'Friedrich', 'Fabio', 'Ferris', 'Flavio', 'Folke', 'Fred', 'Faris'],
-  G: ['Grant', 'George', 'Gustav', 'Georg', 'Gabriel', 'Gino', 'Guenther', 'Gregor', 'Gerd', 'Glenn', 'Gideon', 'Gerald', 'Goran', 'Gunnar', 'Gerrit', 'Gilbert', 'Gael', 'Gerwin', 'Gavin', 'Giorgio'],
-  H: ['Hugh', 'Hektor', 'Henry', 'Hassan', 'Hans', 'Hugo', 'Harald', 'Holger', 'Heiko', 'Hannes', 'Hendrik', 'Hakan', 'Hamza', 'Heinrich', 'Helmut', 'Herbert', 'Horst', 'Halil', 'Hagen', 'Henrik'],
-  I: ['Ivan', 'Igor', 'Ian', 'Ibrahim', 'Ingo', 'Ismael', 'Ilias', 'Imre', 'Inigo', 'Iwan', 'Idris', 'Ilja', 'Immo', 'Ingmar', 'Ilyas', 'Iker', 'Ilan', 'Iago', 'Iordan', 'Ismet'],
-  J: ['Jonas', 'Jasper', 'Joel', 'Jan', 'Julian', 'Jakob', 'Jamal', 'Jens', 'Johann', 'Jermaine', 'Joscha', 'Jaron', 'Joris', 'Janosch', 'Justus', 'Jean', 'Jonte', 'Jarne', 'Joost', 'Jamie'],
-  K: ['Kai', 'Kurt', 'Karl', 'Konrad', 'Kevin', 'Kilian', 'Kerem', 'Klaus', 'Kjell', 'Kofi', 'Kaspar', 'Kenan', 'Kristian', 'Knut', 'Karsten', 'Kolja', 'Kian', 'Korbinian', 'Krishna', 'Kerim'],
-  L: ['Liam', 'Leon', 'Lukas', 'Lars', 'Lennart', 'Levi', 'Luca', 'Linus', 'Leandro', 'Ludwig', 'Lasse', 'Len', 'Laurin', 'Lio', 'Lennox', 'Loris', 'Lorenz', 'Lothar', 'Luan', 'Lewis'],
+  A: ['Aiert', 'Andoni', 'Ander', 'Antton', 'Aritz', 'Ametz', 'Arkaitz', 'Aitzol', 'Andde', 'Aner', 'Anartz', 'Adei', 'Arai', 'Aiur', 'Aimar', 'Adur', 'Agoitz', 'Amets'],
+  B: ['Beñat', 'Bittor', 'Beñardo', 'Bernat', 'Battita', 'Barttolo', 'Bixente', 'Bertolo', 'Bikendi', 'Bingen'],
+//   C: ['Cyrus', 'Carl', 'Curtis', 'Christian', 'Conor', 'Cedric', 'Cem', 'Claudio', 'Cornelius', 'Connor', 'Caspar', 'Can', 'Carlo', 'Colin', 'Constantin', 'Chris', 'Carsten', 'Cassius', 'Cliff', 'Cetin'],
+  D: ['Domiku', 'Durruma', 'Dominik', 'Dabid', 'Dario', 'Denis', 'Damian', 'Dino', 'Dilan'],
+  E: ['Egoitz', 'Eneko', 'Eki', 'Ekhi', 'Ekai', 'Ekain', 'Ekaitz', 'Eleder', 'Ellande', 'Enaitz', 'Enekoitz', 'Erdain', 'Erlantz', 'Etxahun'],
+  F: ['Fausto', 'Fred', 'Floyd', 'Finn', 'Felix', 'Frank', 'Florindo', 'Fernando', 'Florian', 'Fortun'],
+  G: ['Galder', 'Gaizka', 'Gari', 'Garikoitz', 'Gartxot', 'Gartzea', 'Gaston', 'Gotzon', 'Gexan'],
+  H: ['Haritz', 'Harri', 'Hedoi', 'Hodei', 'Hegoi', 'Hektor', 'Haimar', 'Hasier', 'Haitz'],
+  I: ['Ibai', 'Igor', 'Iban', 'Ibon', 'Inge', 'Ignazio', 'Igotz', 'Iker', 'Iñigo', 'Iñaki', 'Inar', 'Inhar', 'Iraitz', 'Izei', 'Ioritz'],
+  J: ['Jakes', 'Jon', 'Josu', 'Joseba', 'Julen', 'Jokin', 'Joritz', 'Jurgi', 'Jaso', 'Jatsu'],
+  K: ['Kaiet', 'Kai', 'Karmel', 'Kemen', 'Kepa', 'Kimetz', 'Koldo', 'Kirmen'],
+  L: ['Laurentzi', 'Lier', 'Lizar', 'Lander', 'Lukas', 'Luken', 'Luka', 'Linus'],
+  M: ['Mikel', 'Markel', 'Mattin', 'Martin', 'Mikelats', 'Mitxel', 'Mairu'],
 }
 
 const FEMALE: Record<string, string[]> = {
-  A: ['Anna', 'Aria', 'Amelie', 'Alina', 'Astrid', 'Anja', 'Aylin', 'Anke', 'Ada', 'Antonia', 'Alma', 'Annika', 'Asya', 'Agnes', 'Amira', 'Anouk', 'Aurora', 'Alicia', 'Adriana', 'Alva'],
-  B: ['Bella', 'Bea', 'Bianca', 'Brenda', 'Birgit', 'Berta', 'Bahar', 'Bettina', 'Bianka', 'Brigitte', 'Britta', 'Beatrix', 'Belinda', 'Bente', 'Bojana', 'Beyza', 'Birte', 'Blanka', 'Bobbie', 'Brunhild'],
-  C: ['Carol', 'Cleo', 'Clara', 'Chiara', 'Carla', 'Celine', 'Catrin', 'Cora', 'Cynthia', 'Constanze', 'Cecilia', 'Charlotte', 'Cilia', 'Carmen', 'Cira', 'Coco', 'Caren', 'Carina', 'Camille', 'Cathy'],
-  D: ['Dalia', 'Dora', 'Diana', 'Daphne', 'Dana', 'Doreen', 'Delia', 'Dunja', 'Denise', 'Dilara', 'Doris', 'Dagmar', 'Daniela', 'Dilan', 'Dominika', 'Dorothea', 'Daria', 'Debbie', 'Diane', 'Dilek'],
-  E: ['Elsa', 'Eva', 'Ella', 'Emma', 'Elena', 'Edith', 'Esra', 'Erna', 'Elif', 'Emilia', 'Erika', 'Elke', 'Esther', 'Evelyn', 'Enie', 'Ebru', 'Eda', 'Eleonora', 'Emily', 'Elvira'],
-  F: ['Freya', 'Fay', 'Fiona', 'Frieda', 'Franka', 'Femke', 'Fatima', 'Fina', 'Flora', 'Franziska', 'Frida', 'Felicia', 'Fenja', 'Fee', 'Filippa', 'Florentine', 'Fabienne', 'Funda', 'Faye', 'Finja'],
-  G: ['Greta', 'Gwen', 'Gina', 'Gloria', 'Gisela', 'Gerda', 'Grace', 'Galina', 'Gabriele', 'Gerlinde', 'Gundula', 'Giada', 'Genoveva', 'Goldie', 'Gita', 'Geraldine', 'Giselle', 'Greer', 'Guendalina', 'Gunda'],
-  H: ['Hana', 'Holly', 'Heidi', 'Helena', 'Hannah', 'Hedda', 'Huelya', 'Helga', 'Hilde', 'Henrike', 'Hanna', 'Hatice', 'Hermine', 'Heike', 'Helene', 'Hella', 'Henna', 'Hilda', 'Honey', 'Hannelore'],
-  I: ['Iris', 'Ines', 'Ida', 'Isabel', 'Ilka', 'Ira', 'Imke', 'Indira', 'Iona', 'Ingrid', 'Ilse', 'Irmgard', 'Ilayda', 'Isolde', 'Ivana', 'Inga', 'Irina', 'Isabella', 'Idun', 'Iben'],
-  J: ['Jana', 'Julia', 'Joana', 'Jasmin', 'Jette', 'Johanna', 'Judith', 'Juna', 'Jolanda', 'Janne', 'Josefine', 'Juliane', 'Jolie', 'Jade', 'Jenny', 'Jara', 'Joline', 'Jutta', 'Jasmina', 'Joyce'],
-  K: ['Kira', 'Kim', 'Kara', 'Klara', 'Katja', 'Karin', 'Kerstin', 'Kaja', 'Kayra', 'Kornelia', 'Katharina', 'Katrin', 'Keziah', 'Kyra', 'Kunigunde', 'Karla', 'Kaori', 'Kelly', 'Kalea', 'Kassandra'],
-  L: ['Lena', 'Lia', 'Luisa', 'Lara', 'Lina', 'Leonie', 'Lotte', 'Layla', 'Lilly', 'Linda', 'Lisa', 'Liv', 'Leandra', 'Lou', 'Lale', 'Larissa', 'Leila', 'Luna', 'Ludmilla', 'Liana'],
+  A: ['Arhane', 'Aiane', 'Ariane', 'Ane', 'Aloña', 'Aiora', 'Arantza', 'Anne', 'Andone', 'Andere', 'Arene', 'Amaia', 'Ainhoa', 'Ainhize', 'Aintzane'],
+  B: ['Bakarne', 'Bakartxo', 'Batirtze', 'Barbara', 'Bea', 'Batiste', 'Begoña', 'Beñate', 'Bikuña', 'Bittori'],
+//   C: ['Carol', 'Cleo', 'Clara', 'Chiara', 'Carla', 'Celine', 'Catrin', 'Cora', 'Cynthia', 'Constanze', 'Cecilia', 'Charlotte', 'Cilia', 'Carmen', 'Cira', 'Coco', 'Caren', 'Carina', 'Camille', 'Cathy'],
+  D: ['Dominika', 'Dorleta', 'Diana', 'Deñe', 'Dunixe', 'Dalia', 'Donixi', 'Dominika', 'Dorotea'],
+  E: ['Eider', 'Ederne', 'Eider', 'Eila', 'Edurne', 'Elsa', 'Erika', 'Ekia', 'Ekiñe', 'Elaia', 'Elene', 'Elixabete', 'Estitxu', 'Eluska', 'Eneritz', 'Eresti', 'Eukene', 'Eunate'],
+  F: ['Felixa', 'Frantxiska', 'Frantxia', 'Frida', 'Fatima', 'Frantziska'],
+  G: ['Goretti', 'Gabone', 'Garbiñe', 'Gartze', 'Gartzene', 'Gentzane', 'Gizane', 'Goiatz', 'Goizeder', 'Goizane', 'Gotzone'],
+  H: ['Haizea', 'Haizene', 'Haizeder', 'Helena', 'Hegoa', 'Hilde', 'Hodei'],
+  I: ['Izar', 'Ines', 'Ibabe', 'Izaro', 'Idoia', 'Iraia', 'Ignazia', 'Igone', 'Izar', 'Ihintza', 'Intza', 'Ioar', 'Irune', 'Ihurre', 'Ilargi', 'Ilazki', 'Irantzu', 'Irati', 'Iratxe', 'Iruna', 'Itsaso', 'Itxaro', 'Ixone'],
+  J: ['Jone', 'Jaione', 'Joana', 'Jare', 'Jasone', 'Joane', 'Josune', 'Joar', 'June', 'Josebe', 'Josune', 'Jule', 'Julene'],
+  K: ['Kattalin', 'Karmele', 'Katixa', 'Klara', 'Koldobike', 'Koro', 'Keyla', 'Kiara'],
+  L: ['Lide', 'Libe', 'Laida', 'Leire', 'Laia', 'Lina', 'Laiene', 'Lierni', 'Larraitz', 'Larrauri', 'Lea', 'Lexuri', 'Lohizune', 'Lore', 'Lorea', 'Lur'],
+  M: ['Maddalen', 'Maddi', 'Miren', 'Maialen', 'Maider', 'Maier', 'Maitane', 'Maite', 'Maiteder', 'Malen', 'Maren', 'Matxalen', 'Mendia', 'Mikele'],
 }
 
 // Victims always start with V (≥20).
@@ -51,9 +53,13 @@ function f(name: string): NamedPerson {
 
 /** A distinct named person for each suspect index (0 = A, 1 = B, …). */
 export function suspectPerson(index: number, gender: 'm' | 'f', used: Set<string>): NamedPerson {
+  if (index >= 2) index += 1;
   const letter = String.fromCharCode(65 + index)
   const bank = (gender === 'm' ? MALE : FEMALE)[letter] ?? [letter + index]
-  for (const name of bank) {
+  const shuffledInd = [...Array(bank.length).keys()].sort(() => Math.random() - 0.5)
+
+  for (const si of shuffledInd) {
+    const name = bank[si]
     if (!used.has(name)) {
       used.add(name)
       return { name, gender }
